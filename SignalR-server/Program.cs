@@ -27,6 +27,7 @@ builder.Services.AddSignalR();
 
 var app = builder.Build();
 
+app.UseStaticFiles();
 app.UseRouting();
 app.UseCors();
 app.MapHub<ChatHub>("/chatHub");
@@ -65,6 +66,7 @@ app.MapGet("/weatherforecast", () =>
 
 
 app.MapGet("/", () => "SignalR backend is running 🎉");
+app.MapFallbackToFile("index.html");
 app.Run();
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
