@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import SignalRService from "../services/signalRService";
+import SignalRService from "../services/SignalRService";
 
 const SignalRChat = () => {
   const [user, setUser] = useState<string>("");
@@ -37,14 +37,15 @@ const SignalRChat = () => {
       <div
         style={{
           marginTop: 10,
-          maxHeight: "200px",
-          maxWidth: "200px",
+          height: "100px",
+          width: "200px",
           overflowY: "auto",
           overflowX: "hidden",
           wordBreak: "break-word",
           padding: "8px",
           scrollbarWidth: "none",
           msOverflowStyle: "none",
+          borderRadius: "4px",
         }}
       >
         <h3>Messages:</h3>
