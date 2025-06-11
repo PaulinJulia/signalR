@@ -1,10 +1,17 @@
 var builder = WebApplication.CreateBuilder(args);
 
+var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenAnyIP(int.Parse(port));
+});
+
+
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
     {
-        policy.WithOrigins("http://localhost:5173", "http://localhost:5263")
+        policy.WithOrigins("http://localhost:5173", "http://localhost:5263", "https://signalrchat-kgrw.onrender.com")
               .AllowAnyHeader()
               .AllowAnyMethod()
               .AllowCredentials();
@@ -21,9 +28,7 @@ builder.Services.AddSignalR();
 var app = builder.Build();
 
 app.UseRouting();
-
 app.UseCors();
-
 app.MapHub<ChatHub>("/chatHub");
 
 // Configure the HTTP request pipeline.
@@ -33,7 +38,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+if (!app.Environment.IsProduction())
+{
+    app.UseHttpsRedirection();
+}
 
 var summaries = new[]
 {
@@ -56,7 +64,7 @@ app.MapGet("/weatherforecast", () =>
 .WithOpenApi();
 
 
-
+app.MapGet("/", () => "SignalR backend is running 🎉");
 app.Run();
 
 record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
