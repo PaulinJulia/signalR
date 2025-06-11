@@ -12,7 +12,10 @@ class SignalRService {
 
   constructor() {
     this.connection = new signalR.HubConnectionBuilder()
-      .withUrl("https://signalrchat-kgrw.onrender.com/chatHub")
+      .withUrl("https://signalrchat-kgrw.onrender.com/chatHub", {
+        withCredentials: true,
+        transport: signalR.HttpTransportType.WebSockets,
+      })
       .withAutomaticReconnect()
       .configureLogging(signalR.LogLevel.Information)
       .build();
