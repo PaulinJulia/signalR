@@ -11,7 +11,7 @@ builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
     {
-        policy.WithOrigins("http://localhost:5173", "http://localhost:5263", "https://signalrchat-kgrw.onrender.com")
+        policy.WithOrigins("http://localhost:5173", "http://localhost:5263", "https://signalrchat-kgrw.onrender.com", "https://signalrchat-kgrw.onrender.com/chatHub")
               .AllowAnyHeader()
               .AllowAnyMethod()
               .AllowCredentials();
