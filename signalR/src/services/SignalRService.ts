@@ -2,13 +2,17 @@ import * as signalR from "@microsoft/signalr";
 
 type MessageHandler = (user: string, message: string) => void;
 
+const baseUrl = import.meta.env.PROD
+  ? "https://signalrchat-kgrw.onrender.com"
+  : "http://localhost:5263";
+
 class SignalRService {
   private connection: signalR.HubConnection;
   private messageHandlers: MessageHandler[] = [];
 
   constructor() {
     this.connection = new signalR.HubConnectionBuilder()
-      .withUrl("http://localhost:5263/chatHub")
+      .withUrl("https://signalrchat-kgrw.onrender.com/chatHub")
       .withAutomaticReconnect()
       .configureLogging(signalR.LogLevel.Information)
       .build();
