@@ -1,8 +1,12 @@
 # Bygg frontend (React)
 FROM node:18 AS frontend
 WORKDIR /app/frontend
-COPY signalR/ .
-RUN npm install && npm run build
+COPY signalR/package*.json ./
+RUN npm install
+COPY signalR/public ./public
+COPY signalR/src ./src
+RUN npm run build
+RUN ls -l /app/frontend/build
 
 # Bygg backend (ASP.NET Core med SignalR)
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
