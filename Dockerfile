@@ -4,11 +4,10 @@ WORKDIR /app/frontend
 COPY signalR/package*.json ./
 COPY signalR/tsconfig*.json ./
 COPY signalR/vite.config.ts ./
-COPY signalR/public ./public
 RUN npm install
+COPY signalR/public ./public
 COPY signalR/src ./src
 RUN npm run build
-RUN ls -l /app/frontend/build
 
 # Bygg backend (ASP.NET Core med SignalR)
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
@@ -18,7 +17,7 @@ RUN dotnet publish SignalR-server/SignalR.csproj -c Release -o /app/publish
 
 # Lägg till frontend-bygget i wwwroot
 RUN rm -rf /app/publish/wwwroot
-COPY --from=frontend /app/frontend/build /app/publish/wwwroot
+COPY --from=frontend /app/frontend/dist /app/publish/wwwroot
 
 # Slutgiltig image (ASP.NET runtime)
 FROM mcr.microsoft.com/dotnet/aspnet:8.0
