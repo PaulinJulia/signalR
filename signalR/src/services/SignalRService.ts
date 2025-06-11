@@ -2,9 +2,9 @@ import * as signalR from "@microsoft/signalr";
 
 type MessageHandler = (user: string, message: string) => void;
 
-const baseUrl = import.meta.env.PROD
-  ? "https://signalrchat-kgrw.onrender.com"
-  : "http://localhost:5263";
+// const baseUrl = import.meta.env.PROD
+//   ? "https://signalrchat-kgrw.onrender.com"
+//   : "http://localhost:5263";
 
 class SignalRService {
   private connection: signalR.HubConnection;
