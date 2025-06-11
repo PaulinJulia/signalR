@@ -2,6 +2,7 @@
 FROM node:18 AS frontend
 WORKDIR /app/frontend
 COPY signalR/package*.json ./
+COPY signalR/tsconfig*.json ./
 RUN npm install
 COPY signalR/public ./public
 COPY signalR/src ./src
