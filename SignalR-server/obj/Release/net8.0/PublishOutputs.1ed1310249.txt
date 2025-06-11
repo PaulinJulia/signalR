@@ -1,0 +1,13 @@
+C:\Users\pauli\Fullstack\Examensarbete\SignalRChat\signalR-server\bin\Release\net8.0\publish\SignalR.exe
+C:\Users\pauli\Fullstack\Examensarbete\SignalRChat\signalR-server\bin\Release\net8.0\publish\appsettings.Development.json
+C:\Users\pauli\Fullstack\Examensarbete\SignalRChat\signalR-server\bin\Release\net8.0\publish\appsettings.json
+C:\Users\pauli\Fullstack\Examensarbete\SignalRChat\signalR-server\bin\Release\net8.0\publish\package-lock.json
+C:\Users\pauli\Fullstack\Examensarbete\SignalRChat\signalR-server\bin\Release\net8.0\publish\SignalR.dll
+C:\Users\pauli\Fullstack\Examensarbete\SignalRChat\signalR-server\bin\Release\net8.0\publish\SignalR.deps.json
+C:\Users\pauli\Fullstack\Examensarbete\SignalRChat\signalR-server\bin\Release\net8.0\publish\SignalR.runtimeconfig.json
+C:\Users\pauli\Fullstack\Examensarbete\SignalRChat\signalR-server\bin\Release\net8.0\publish\SignalR.pdb
+C:\Users\pauli\Fullstack\Examensarbete\SignalRChat\signalR-server\bin\Release\net8.0\publish\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\pauli\Fullstack\Examensarbete\SignalRChat\signalR-server\bin\Release\net8.0\publish\Microsoft.OpenApi.dll
+C:\Users\pauli\Fullstack\Examensarbete\SignalRChat\signalR-server\bin\Release\net8.0\publish\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\pauli\Fullstack\Examensarbete\SignalRChat\signalR-server\bin\Release\net8.0\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\pauli\Fullstack\Examensarbete\SignalRChat\signalR-server\bin\Release\net8.0\publish\Swashbuckle.AspNetCore.SwaggerUI.dll

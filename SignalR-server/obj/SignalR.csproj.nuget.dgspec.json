@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\pauli\\Fullstack\\Examensarbete\\SignalRChat\\SignalR-server\\SignalR.csproj": {}
+    "C:\\Users\\pauli\\Fullstack\\Examensarbete\\SignalRChat\\signalR-server\\SignalR.csproj": {}
   },
   "projects": {
-    "C:\\Users\\pauli\\Fullstack\\Examensarbete\\SignalRChat\\SignalR-server\\SignalR.csproj": {
+    "C:\\Users\\pauli\\Fullstack\\Examensarbete\\SignalRChat\\signalR-server\\SignalR.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\pauli\\Fullstack\\Examensarbete\\SignalRChat\\SignalR-server\\SignalR.csproj",
+        "projectUniqueName": "C:\\Users\\pauli\\Fullstack\\Examensarbete\\SignalRChat\\signalR-server\\SignalR.csproj",
         "projectName": "SignalR",
-        "projectPath": "C:\\Users\\pauli\\Fullstack\\Examensarbete\\SignalRChat\\SignalR-server\\SignalR.csproj",
+        "projectPath": "C:\\Users\\pauli\\Fullstack\\Examensarbete\\SignalRChat\\signalR-server\\SignalR.csproj",
         "packagesPath": "C:\\Users\\pauli\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\pauli\\Fullstack\\Examensarbete\\SignalRChat\\SignalR-server\\obj\\",
+        "outputPath": "C:\\Users\\pauli\\Fullstack\\Examensarbete\\SignalRChat\\signalR-server\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\pauli\\AppData\\Roaming\\NuGet\\NuGet.Config"

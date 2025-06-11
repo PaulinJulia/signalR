@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Lk7/OcMFXVjA1b9ORFZYulUMyqBHCP88igJyAbu8xml7LhZBN7N6GVFlkf7+HwuYgpW6yoWjmJ4Zh95mbPvriA==",
+  "dgSpecHash": "xWnmWPqcTSmrVkd/XW+TQCEpdTYqYr/WZqpoDAVdqPMUy+ZKURBtQdN352j03SUu+2KK5pp4XUWOMlxpHJDsHQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pauli\\Fullstack\\Examensarbete\\SignalRChat\\SignalR-server\\SignalR.csproj",
+  "projectFilePath": "C:\\Users\\pauli\\Fullstack\\Examensarbete\\SignalRChat\\signalR-server\\SignalR.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pauli\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.6\\microsoft.aspnetcore.openapi.8.0.6.nupkg.sha512",
     "C:\\Users\\pauli\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
