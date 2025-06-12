@@ -1,5 +1,5 @@
 import "./App.css";
-import SignalRChat from "./components/signalRChat";
+import SignalRChat from "./components/SignalRChat";
 
 function App() {
 

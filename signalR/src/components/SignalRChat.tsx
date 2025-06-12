@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import SignalRService from "../services/signalRService";
+import SignalRService from "../services/SignalRService";
 
 const SignalRChat = () => {
   const [user, setUser] = useState<string>("");
